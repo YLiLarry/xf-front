@@ -1,0 +1,97 @@
+<div id="home">
+   <section id="section-1">
+      <img src="/images/home-1.jpg">
+      <button class="btn btn-danger">5kg干粉灭火器 >></button>
+   </section>
+   <section id="section-2">
+      <h4 class="m-a">维修中心</h4>
+      <ul class="list-unstyled col-md-4">
+         {{#each productListCol1 as |product|}}
+         <li class="card-block">
+            <img src="{{product.img}}" class="img-circle card-img-left pull-left">
+            <div class="text pull-right">
+               <h6>{{product.name}}</h6>
+               <small class="text-muted">{{product.description}}</small>
+            </div>
+            <div class="clearfix"></div>
+         </li>
+         {{/each}}
+      </ul>
+      <ul class="list-unstyled col-md-4">
+         {{#each productListCol2 as |product|}}
+         <li class="card-block">
+            <img src="{{product.img}}" class="img-circle card-img-left pull-left">
+            <div class="text pull-right">
+               <h6>{{product.name}}</h6>
+               <small class="text-muted">{{product.description}}</small>
+            </div>
+            <div class="clearfix"></div>
+         </li>
+         {{/each}}
+      </ul>
+      <ul class="list-unstyled col-md-4">
+         {{#each productListCol3 as |product|}}
+         <li class="card-block">
+            <img src="{{product.img}}" class="img-circle card-img-left pull-left">
+            <div class="text pull-right">
+               <h6>{{product.name}}</h6>
+               <small class="text-muted">{{product.description}}</small>
+            </div>
+            <div class="clearfix"></div>
+         </li>
+         {{/each}}
+      </ul>
+      <div class="clearfix"></div>
+   </section>
+   <section id="section-3">
+      <h4 class="m-a">客户企业</h4>
+      <div id="intro" class="label label-info m-b p-a-s">我们服务于天津市二十多家大型企业</div>
+      <div class="">
+         {{#part-client-map clientList=clientList}}{{/part-client-map}}
+      </div>
+   </section>
+   <section id="section-4">
+      <img src="/images/home-2.jpg">
+      <div id="qa" class="card-img-overlay">
+         <div class="popover popover-right ask">
+            <div class="popover-arrow"></div>
+            <h3 class="popover-title">为什么选择金凯达成消防?</h3>
+            <div class="popover-content">
+               <p>众多消防安全设备销售商，我该如何选择?</p>
+            </div>
+         </div>
+         <div class="popover popover-left ans">
+            <div class="popover-arrow"></div>
+            <h3 class="popover-title">我们安全、专业、高效率</h3>
+            <div class="popover-content">
+               <p>天津市金凯达成消防器材服务于本市20多家大型民营、政府企业机构</p>
+            </div>
+         </div>
+         <div class="clearfix"></div>
+         <div class="popover popover-right ask">
+            <div class="popover-arrow"></div>
+            <h3 class="popover-title">你们的业务范围?</h3>
+            <div class="popover-content">
+               <p>除了销售、维修灭火器材和安全设备，你们还提供什么服务?</p>
+            </div>
+         </div>
+         <div class="popover popover-left ans">
+            <div class="popover-arrow"></div>
+            <h3 class="popover-title">培训您的员工使用灭火设备</h3>
+            <div class="popover-content">
+               <p>我们了解到很多企业消防设施齐全，可是员工们并不会使用。因此，除了销售和维修之外，我们还可以到您的企业向员工演示灭火器使用方法。</p>
+            </div>
+         </div>
+         <div class="clearfix"></div>
+         <div class="popover popover-left ans">
+            <div class="popover-arrow"></div>
+            <h3 class="popover-title">安装应急设备</h3>
+            <div class="popover-content">
+               <p>除了销售应急灯、摄像头、疏散标志外，我们还可以到您的企业安装这些设备。</p>
+            </div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+      <!-- <img src="/images/tianjin-explosion-2015.jpg"> -->
+   </section>
+</div>
