@@ -2,6 +2,12 @@
    h4 {
       /*border-bottom: 1px solid rgba(0,0,0,0.5);*/
    }
+   section {
+      margin-top: 1rem;
+      h4 {
+         margin: 1rem;
+      }
+   }
    #section-1 {
 /*      background-image: url("/images/home-1.jpg");
       background-size: cover;
@@ -13,7 +19,7 @@
       }
       button {
          position: absolute;
-         right: 80px;
+         right: 5.5%;
          bottom: 60px;
       }
       position: relative;
@@ -36,7 +42,7 @@
       position: relative;
       #intro {
          position: absolute;
-         top: 10%;
+         top: 12.5%;
          left: 5%;
          z-index: 999;
          font-size: 1rem;
@@ -51,14 +57,23 @@
          max-width: 300px;
          position: relative;
          &.ask {
-            margin-left: 200px;
+            margin-left: 150px;
          }
          &.ans {
-            margin-right: 200px;
+            margin-right: 150px;
             float: right;
          }
       }
       position: relative;
-
+      #contact {
+         img {
+            width: 70%;
+            margin: 0.5rem;
+         }
+      }
+      h4 {
+         border-bottom: 1px solid $gray-lighter;
+         padding-bottom: 0.5rem;
+      }
    }
 }

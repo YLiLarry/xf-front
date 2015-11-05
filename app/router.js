@@ -2,11 +2,13 @@ import Ember from 'ember';
 import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: config.locationType
+   location: config.locationType
 });
 
 Router.map(function() {
-  this.route('home');
+   this.route('root', {path: '/'}, function() {
+      this.route('home', {path: '/home'});
+   });
 });
 
 export default Router;
