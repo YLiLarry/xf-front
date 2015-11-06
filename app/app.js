@@ -8,9 +8,16 @@ var App;
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
-  modulePrefix: config.modulePrefix,
-  podModulePrefix: config.podModulePrefix,
-  Resolver: Resolver
+   modulePrefix: config.modulePrefix,
+   podModulePrefix: config.podModulePrefix,
+   Resolver: Resolver
+});
+
+Ember.Router.reopen({
+   didTransition: function() {
+      this._super();
+      window.scrollTo(0, 0);
+   }
 });
 
 loadInitializers(App, config.modulePrefix);

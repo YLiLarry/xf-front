@@ -1,22 +1,5 @@
 #home {
-   h4 {
-      /*border-bottom: 1px solid rgba(0,0,0,0.5);*/
-   }
-   section {
-      margin-top: 1rem;
-      h4 {
-         margin: 1rem;
-      }
-   }
    #section-1 {
-/*      background-image: url("/images/home-1.jpg");
-      background-size: cover;
-      width: 100vw;
-      height: 70vh;
-      background-position: left;*/
-      img {
-         width: 100vw;
-      }
       button {
          position: absolute;
          right: 5.5%;
@@ -47,6 +30,10 @@
          z-index: 999;
          font-size: 1rem;
       }
+      #client-map {
+         position: relative;
+         height: 590px;
+      }
    }
 
    #section-4 {
@@ -70,10 +57,6 @@
             width: 70%;
             margin: 0.5rem;
          }
-      }
-      h4 {
-         border-bottom: 1px solid $gray-lighter;
-         padding-bottom: 0.5rem;
       }
    }
 }

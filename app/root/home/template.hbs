@@ -1,7 +1,10 @@
 <div id="home">
    <section id="section-1">
-      <img src="/images/home-1.jpg">
-      <button class="btn btn-danger">5kg干粉灭火器 >></button>
+      <img class="full" src="/images/home-1.jpg">
+      <button class="btn btn-danger">
+         5kg干粉灭火器
+         <i class="fa fa-angle-double-right"></i>
+      </button>
    </section>
    <section id="section-2">
       <h4>维修中心</h4>
@@ -46,26 +49,35 @@
    <section id="section-3">
       <h4>客户企业</h4>
       <div id="intro" class="label label-info m-b p-a-s">我们服务于天津市二十多家大型企业</div>
-      <div class="">
+      <div id="client-map">
          {{#part-client-map clientList=clientList}}{{/part-client-map}}
       </div>
    </section>
    <section id="section-4">
       <div class="col-md-6" id="contact">
-         <h4>联系我们</h4>
+         <h4 class="underlined">联系我们</h4>
          <div class="col-md-6">
-            <h6>天津市金凯达成消防设备有限公司</h6>
+            <h6>
+               {{#link-to "root.contact"}}
+                  天津市金凯达成消防设备有限公司
+                  <i class="fa fa-angle-double-right"></i>
+               {{/link-to}}
+            </h6>
             <small>红桥区芥园道明华里1号楼3门102号底商</small>
-            <img src="images/certificate.jpg">
+            <a href="/images/certificate.jpg" target="_blank">
+               <img class="full" src="/images/certificate.jpg">
+            </a>
          </div>
          <div class="col-md-6">
             <div><strong>联系人:</strong> 李经理</div>
             <div><strong>电话:</strong> 13821777119</div>
-            <div><strong>邮箱:</strong> 13802123455@163.com</div>
+            <div><strong>邮箱:</strong>
+               <a href="mailto:13802123455@163.com">13802123455@163.com</a>
+            </div>
          </div>
       </div>
       <div class="col-md-6">
-         <h4>常见问题</h4>
+         <h4 class="underlined">常见问题</h4>
             <ul>
                {{#each QAList as |qa|}}
                   <li>

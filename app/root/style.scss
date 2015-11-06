@@ -13,3 +13,29 @@ footer {
       display: inline;
    }
 }
+#root-body {
+   padding-top: 54px;
+}
+
+section {
+   margin-bottom: 1rem;
+   h4 {
+      margin: 1rem;
+   }
+   h4.underlined {
+      border-bottom: 1px solid $gray-lighter;
+      padding-bottom: 0.5rem;
+   }
+}
+
+a {
+   color: darken($brand-primary, 15%);
+}
+
+a:hover {
+   color: darken($brand-primary, 20%);
+}
+
+img.full {
+   width: 100vw;
+}
