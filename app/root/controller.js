@@ -16,6 +16,5 @@ export default Ember.Controller.extend({
             this.get('rootProduct').set('keyword', keyword);
          }
       }
-   },
-   keyword: "test"
+   }
 });

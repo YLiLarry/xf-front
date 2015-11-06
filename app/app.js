@@ -13,13 +13,6 @@ App = Ember.Application.extend({
    Resolver: Resolver
 });
 
-Ember.Router.reopen({
-   didTransition: function() {
-      this._super();
-      window.scrollTo(0, 0);
-   }
-});
-
 loadInitializers(App, config.modulePrefix);
 
 export default App;
