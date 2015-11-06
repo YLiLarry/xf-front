@@ -1,12 +1,21 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+   rootProduct: Ember.inject.controller("root.product"),
    actions: {
       search: function() {
-         if (this.get('searchText')) {
+         var keyword = this.get('keyword')
+         if (keyword) {
             this.transitionToRoute('root.product');
-            window.scroll(0,500)
+         }
+         this.get('rootProduct').set('keyword', keyword);
+      },
+      searchKeyUp: function() {
+         var keyword = this.get('keyword')
+         if (! keyword || keyword.length === 0) {
+            this.get('rootProduct').set('keyword', keyword);
          }
       }
-   }
+   },
+   keyword: "test"
 });

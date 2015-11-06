@@ -17,8 +17,8 @@
       </li>
    </ul>
    <form class="form-inline navbar-form pull-right">
-      {{input type="text" value=searchText class="form-control form-control" type="text" placeholder="搜索产品" key-up="search"}}
-      <button class="btn btn-success-outline" type="submit">搜索</button>
+      {{input type="text" value=keyword class="form-control form-control" type="text" placeholder="搜索产品" key-up="searchKeyUp"}}
+      <button {{action "search"}} class="btn btn-success-outline" type="submit">搜索</button>
    </form>
 </nav>
 <div id="root-body">

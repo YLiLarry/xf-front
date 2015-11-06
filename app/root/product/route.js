@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
    model: function() {
-      return this.store.findAll("root.product");
+      return this.store.find("root.product","");
    }
 });
