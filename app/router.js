@@ -9,7 +9,9 @@ Router.map(function() {
    this.route('root', {
       path: '/'
    }, function() {
-      this.route('home');
+      this.route('home', {
+         path: '/'
+      });
       this.route('product');
       this.route('contact');
    });
