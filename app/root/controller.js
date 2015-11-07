@@ -9,6 +9,10 @@ export default Ember.Controller.extend({
             this.transitionToRoute('root.product');
          }
          this.get('rootProduct').set('keyword', keyword);
+         this.get('rootProduct').set('isSearching', true);
+      },
+      showAllProducts: function() {
+         this.get('rootProduct').set('isSearching', false);
       },
       searchKeyUp: function() {
          var keyword = this.get('keyword')

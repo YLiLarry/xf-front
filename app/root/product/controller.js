@@ -32,5 +32,10 @@ export default Ember.Controller.extend({
    }),
    hasFilteredFireExtinguishers: isNonEmptyArr("filteredFireExtinguishers"),
    hasFilteredAlarms: isNonEmptyArr("filteredAlarms"),
-   hasFilteredSigns: isNonEmptyArr("filteredSigns")
+   hasFilteredSigns: isNonEmptyArr("filteredSigns"),
+   isSearching: false
+   // isSearching: Ember.computed('keyword', function() {
+   //    var k = this.get('keyword');
+   //    return ((typeof k) === 'string') && (k.length > 0);
+   // })
 });

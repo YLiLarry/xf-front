@@ -4,13 +4,13 @@
    <div id="bmap" class="img-thumbnail"></div>
    <div id="right">
       <ul id="client-list" class="list-unstyled p-a">
-         <li class="label label-info m-b p-a-s">我们的客户</li>
+         <li class="label label-info m-b p-a-s"><span class="text-small">我们的客户</span></li>
          {{#each clientList as |client|}}
             <li> <small>></small> <a> {{client.title}} </a> </li>
          {{/each}}
       </ul>
       <div id="become-client">
-         <button class="btn btn-primary">成为我们的客户</button>
+         {{#link-to "root.contact" class="btn btn-primary"}}成为我们的客户{{/link-to}}
       </div>
    </div>
 </div>
