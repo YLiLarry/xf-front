@@ -1,6 +1,6 @@
 import Ember from 'ember';
 export default Ember.Component.extend({
-   init: function() {
+   didInsertElement: function() {
       var C = this;
       this._super();
       Ember.run.scheduleOnce("afterRender", function() {

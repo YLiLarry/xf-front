@@ -1,6 +1,6 @@
 import Ember from 'ember';
 export default Ember.Component.extend({
-   init: function() {
+   didInsertElement: function() {
       var C = this;
       this._super();
       Ember.run.scheduleOnce("afterRender", function() {
@@ -8,7 +8,7 @@ export default Ember.Component.extend({
          function initMap() {
             createMap(); //创建地图
             setMapEvent(); //设置地图事件
-            addMapControl(); //向地图添加控件
+            // addMapControl(); //向地图添加控件
             addMapOverlay(); //向地图添加覆盖物
          }
 
